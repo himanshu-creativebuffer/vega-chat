@@ -40,6 +40,10 @@ import * as mediaLoader from './mediaLoader';
 import { debounce } from './schedulers';
 import { IS_ELECTRON, IS_SERVICE_WORKER_SUPPORTED, IS_TOUCH_ENV } from './windowEnvironment';
 
+interface NotificationOptionsType extends NotificationOptions {
+  vibrate?: number[];
+}
+
 function getDeviceToken(subscription: PushSubscription) {
   const data = subscription.toJSON();
   return JSON.stringify({
@@ -423,7 +427,7 @@ export async function notifyAboutCall({
 
   const icon = await getAvatar(user);
 
-  const options: NotificationOptions = {
+  const options: NotificationOptionsType = {
     body: getUserFullName(user),
     icon,
     badge: icon,
@@ -499,7 +503,7 @@ export async function notifyAboutMessage({
     }
   } else {
     const dispatch = getActions();
-    const options: NotificationOptions = {
+    const options: NotificationOptionsType = {
       body,
       icon,
       badge: icon,

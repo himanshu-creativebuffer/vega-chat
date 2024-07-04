@@ -47,6 +47,10 @@ type CloseNotificationData = {
   chatId: string;
 };
 
+interface NotificationOptionsType extends NotificationOptions {
+  vibrate?: number[];
+}
+
 let lastSyncAt = new Date().valueOf();
 const shownNotifications = new Set();
 const clickBuffer: Record<string, NotificationData> = {};
@@ -126,7 +130,7 @@ function showNotification({
 }: NotificationData) {
   const isFirstBatch = new Date().valueOf() - lastSyncAt < 1000;
   const tag = String(isFirstBatch ? 0 : chatId || 0);
-  const options: NotificationOptions = {
+  const options: NotificationOptionsType = {
     body,
     data: {
       chatId,

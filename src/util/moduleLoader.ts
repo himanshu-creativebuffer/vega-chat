@@ -47,8 +47,8 @@ export async function loadBundle<B extends Bundles>(bundleName: B) {
         LOAD_PROMISES[Bundles.Calls] = import(/* webpackChunkName: "BundleCalls" */ '../bundles/calls');
         break;
     }
-
-    (LOAD_PROMISES[bundleName] as Promise<ImportedBundles[B]>).then(runCallbacks);
+    const bunName:unknown = LOAD_PROMISES[bundleName];
+    (bunName as Promise<ImportedBundles[B]>).then(runCallbacks);
   }
 
   const bundle = (await LOAD_PROMISES[bundleName]) as unknown as ImportedBundles[B];
