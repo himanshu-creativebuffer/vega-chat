@@ -1,0 +1,71 @@
+.ProfilePhoto {
+  width: 100%;
+  height: 100%;
+  cursor: var(--custom-cursor, pointer);
+  position: relative;
+
+  .avatar-media {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .spinner-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .spinner-wrapper,
+  &.deleted-account,
+  &.replies-bot-account,
+  &.no-photo,
+  &.saved-messages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background: linear-gradient(var(--color-white) -125%, var(--color-user));
+    cursor: var(--custom-cursor, default);
+  }
+
+  &.no-photo {
+    font-size: 14rem;
+    white-space: nowrap;
+  }
+
+  &.replies-bot-account,
+  &.deleted-account,
+  &.saved-messages {
+    font-size: 10rem;
+  }
+
+  
+  .chatnameLoader {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: load 1s infinite linear alternate;
+   
+    @keyframes load {
+      0%  {box-shadow: 20px 0 #fff, -20px 0 #fffffd7c;background: #fff }
+      33% {box-shadow: 20px 0 #fff, -20px 0 #fffffd7c;background: #fffffd7c}
+      66% {box-shadow: 20px 0 #fffffd7c,-20px 0 #fff; background: #fffffd7c}
+      100%{box-shadow: 20px 0 #fffffd7c,-20px 0 #fff; background: #fff }
+    }
+  }
+
+  .thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .thumb, .avatar-media {
+    // @optimization
+    &:not(.shown) {
+      display: block !important;
+    }
+  }
+}

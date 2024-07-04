@@ -1,0 +1,43 @@
+**Introducing Telegram Web A v10.0!**
+
+Today marks a special occasion. Telegram is celebrating its 10th anniversary! In honor of this milestone, and to highlight our web version's long-awaited parity with the native apps, we've leaped from version 1.x straight to 10.0. Big day!
+
+🌟 **Stories on Telegram**
+Introducing [Telegram Stories](https://t.me/durov/216) - share moments of your life, beyond just text.
+
+💻 **Desktop Version**
+An experimental standalone version is now available for enthusiasts and early adopters on all desktop platforms: **[web.telegram.org/a/get](https://web.telegram.org/a/get)**.
+
+🚀 **Massive Connection Improvements**
+Web A is now more optimized – ensuring speedy and seamless conversations. Less loading, more chatting.
+
+🎙️ **Redesigned Group Calls**
+Group calls have been overhauled to bring exceptional clarity, connectivity, and functionality.
+
+🌍 **Real-Time Translation**
+Premium users can tap to translate entire chats, dynamically updating as they scroll.
+
+⏱️ **Custom Mute Durations**
+Notifications from any chat can be temporarily muted for a specific period – like hours, days, or weeks.
+
+🔖 **Read Time in Groups**
+You can see at what time other members read your message in the 'Seen By' section.
+
+😄 **Emoji v15 Support**
+Web A now supports the latest from Emoji v15, so you can express yourself fully.
+
+🎨 **Dynamic Sticker Packs**
+Dynamic order for your sticker packs can be toggled on or off – whichever you prefer.
+
+🚀 **Performance Upgrades**
+We've implemented multiple memory and performance optimizations for a smoother, faster, more efficient Telegram experience.
+
+🔧 **Fixes & Improvements**
+We've patched several problems, including issues with sending messages while uploading files, freezes while scrolling, and messages incorrectly marking as read with Web A in the background. See if you can spot the host of UI refinements we added as well.😉
+
+📱 **More for iPad Users**
+iPad users, we heard you! Web A now has improved iPad support.
+
+Thank you for being with us. Here's to the next decade together! 🎉🥳
+
+🦄 **We also welcome** you to join our official channels in **[English](https://t.me/webachannel)** and **[Russian](https://t.me/webachannelru)** — where we post app updates and share our experiences building one of the world’s most feature-rich web applications.

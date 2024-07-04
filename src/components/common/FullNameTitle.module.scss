@@ -1,0 +1,31 @@
+.root {
+  display: flex !important;
+  align-items: center;
+  gap: 0.25rem;
+
+  .fullName {
+    margin-bottom: 0;
+
+    &.canCopy {
+      pointer-events: all;
+    }
+  }
+
+  .chatnameLoader {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: load 1s infinite linear alternate;
+   
+    @keyframes load {
+      0%  {box-shadow: 20px 0 #fff, -20px 0 #fffffd7c;background: #fff }
+      33% {box-shadow: 20px 0 #fff, -20px 0 #fffffd7c;background: #fffffd7c}
+      66% {box-shadow: 20px 0 #fffffd7c,-20px 0 #fff; background: #fffffd7c}
+      100%{box-shadow: 20px 0 #fffffd7c,-20px 0 #fff; background: #fff }
+    }
+  }
+
+  :global(.custom-emoji) {
+    color: var(--color-primary);
+  }
+}
